@@ -1,0 +1,35 @@
+{
+  "name": "Demo",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node lib/server/index.js",
+    "pretest": "eslint . --ext .js --ext .jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Ashish",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "express-react-views": "^0.8.2",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-react": "^3.0.1",
+    "gulp-reactify": "^3.0.1",
+    "mysql": "^2.8.0",
+    "nodemon": "^1.4.1",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
+    "request": "^2.61.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "eslint": "~0.22.1",
+    "eslint-plugin-react": "~2.7.0",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "~0.5.1"
+  }
+}
