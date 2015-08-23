@@ -12,6 +12,3 @@ CREATE TABLE product (
      PRIMARY KEY (product_id)
 );
 
-
-SELECT a.product_id, a.product_name, a.product_manufac, b.category_name from product a join product_category b on a.category_Id = b.category_id where a.category_Id = 1 ;
-
