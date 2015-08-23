@@ -16,16 +16,15 @@ var style = {
 var Product = React.createClass({
     render: function() {
 
-      //console.log("HERE IN Product jsx data "+JSON.stringify(this.props.data));
       var data = this.props.data;
       var items = data.map(function(product, index){
         return (
                 <tr>
-                  <td>{index}</td>
+                  <td>{index + 1}</td>
                   <td>{product.product_id}</td>
                   <td>{product.product_name}</td>
                   <td>{product.product_manufac}</td>
-                  <td>{product.category_id}</td>
+                  <td>{product.category_name}</td>
                 </tr>
         );
       });

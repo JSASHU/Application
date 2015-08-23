@@ -1,0 +1,17 @@
+CREATE TABLE product_category (
+     category_id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     category_name CHAR(30) NOT NULL,
+     PRIMARY KEY (category_id)
+);
+
+CREATE TABLE product (
+     product_id MEDIUMINT NOT NULL AUTO_INCREMENT,
+     product_name CHAR(30) NOT NULL,
+	 product_manufac CHAR(30) NOT NULL,
+	 category_Id int,
+     PRIMARY KEY (product_id)
+);
+
+
+SELECT a.product_id, a.product_name, a.product_manufac, b.category_name from product a join product_category b on a.category_Id = b.category_id where a.category_Id = 1 ;
+

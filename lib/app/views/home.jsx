@@ -3,7 +3,6 @@
 var React = require('react');
 var Header = require('./header');
 var Footer = require('./footer');
-var validateForm = require('../../client/validation/validation');
 
 var style = {
     height: 'auto',
@@ -18,15 +17,12 @@ var borderStyle = {
  * Home Page component
  */
 var HomePage = React.createClass({
-  submit: function(e){
-    e.preventDefault();
-  },
+
     render: function() {
       var data = this.props.categoryData;
-      console.log('HERE DATA HOME ' + data);
-      var category = data.map(function(category){
+      var category = data.map(function(cate){
         return (
-                <tr><td><input type = "radio" name = 'categoryRadio' id = {category.category_id} value = {category.category_id} />{category.category_name}</td></tr>
+                <tr><td><input type = "radio" name = 'categoryRadio' id = {cate.category_id} value = {cate.category_id} />{cate.category_name}</td></tr>
         );
       });
 
@@ -68,7 +64,7 @@ var HomePage = React.createClass({
                         </form>
                         <br></br><br></br>
 
-                        <form action = "/insertProduct" method="post" onSubmit = {this.submit}>
+                        <form action = "/insertProduct" method="post" >
                         <div id="insertProduct" style={borderStyle}>
                         <div><b>Add Product</b></div>
 							<div>

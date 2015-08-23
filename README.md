@@ -11,9 +11,10 @@
 * `cd` into the folder
 * run `npm install`
 
-### Start Mysql DB
-* run `mkdir data && mongod --dbpath=data`  
-  In a terminal window and keep it running
+### To Configure Mysql Database
+
+* run mysql from xampp control
+* execute query mentioned in application/sqlquery folder
 
 ### To start the application
 * run `gulp develop`

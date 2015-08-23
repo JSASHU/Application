@@ -15,12 +15,12 @@ var style = {
  */
 var Category = React.createClass({
     render: function() {
-      //console.log("HERE IN category jsx data "+JSON.stringify(this.props.categoryData))
+
       var data = this.props.categoryData;
       var items = data.map(function(category, index){
         return (
                 <tr>
-                  <td>{index}</td>
+                  <td>{index + 1}</td>
                   <td>{category.category_id}</td>
                   <td>{category.category_name}</td>
                 </tr>

@@ -9,7 +9,7 @@ var Footer = require('./footer');
  */
 var Product = React.createClass({
     render: function() {
-	//console.log("HERE IN Add Product jsx data "+JSON.stringify(this.props.data))
+
       return (
       <div className = "main-wrapper">
         <Header />
