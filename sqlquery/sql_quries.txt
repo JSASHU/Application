@@ -12,3 +12,7 @@ CREATE TABLE product (
      PRIMARY KEY (product_id)
 );
 
+INSERT INTO product_category (category_name) VALUES ("Electronics");
+INSERT INTO product_category (category_name) VALUES ("Fashion");
+
+Note :- Add products through application.
