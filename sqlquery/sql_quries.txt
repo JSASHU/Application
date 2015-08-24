@@ -1,23 +1,3 @@
-CREATE TABLE product_category (
-     category_id MEDIUMINT NOT NULL AUTO_INCREMENT,
-     category_name CHAR(30) NOT NULL,
-     PRIMARY KEY (category_id)
-);
-
-CREATE TABLE product (
-     product_id MEDIUMINT NOT NULL AUTO_INCREMENT,
-     product_name CHAR(30) NOT NULL,
-	 product_manufac CHAR(30) NOT NULL,
-	 category_Id int,
-     PRIMARY KEY (product_id)
-);
-
-INSERT INTO product_category (category_name) VALUES ("Electronics");
-INSERT INTO product_category (category_name) VALUES ("Fashion");
-
-Note :- Add products through application.
-
-
 create table product_category(category_id serial, category_name varchar(50));
 create table product(product_id serial, product_name varchar(50), product_manufac varchar(50), category_Id integer);
 
