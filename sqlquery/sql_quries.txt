@@ -16,3 +16,12 @@ INSERT INTO product_category (category_name) VALUES ("Electronics");
 INSERT INTO product_category (category_name) VALUES ("Fashion");
 
 Note :- Add products through application.
+
+
+create table product_category(category_id serial, category_name varchar(50));
+create table product(product_id serial, product_name varchar(50), product_manufac varchar(50), category_Id integer);
+
+insert into product_category (category_name) values('Electronics');
+insert into product_category (category_name) values('Fashion');
+
+insert into product (product_name,product_manufac,category_Id) VALUES ('Laptop','Lenovo',1);

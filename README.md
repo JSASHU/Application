@@ -11,9 +11,9 @@
 * `cd` into the folder
 * run `npm install`
 
-### To Configure Mysql Database
+### To Configure PG Database
 
-* run mysql from xampp control
+* run PG Database
 * execute query mentioned in application/sqlquery folder
 
 ### To start the application

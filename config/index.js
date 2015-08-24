@@ -19,30 +19,30 @@ var config = {
     default: 'localhost',
     env: 'LISTEN_IP'
   },
-  mysql: {
+  pg: {
     host: {
-      doc: 'MYSQL host.',
+      doc: 'PG host.',
       format: 'url',
       default: 'localhost',
-      env: 'MYSQL_HOST'
+      env: 'PG_HOST'
     },
     dbname: {
-      doc: 'MYSQL database.',
+      doc: 'PG database.',
       format: String,
       default: 'demo',
-      env: 'MYSQL_DB_NAME'
+      env: 'PG_DB_NAME'
     },
     password: {
-      doc: 'MYSQL Password.',
+      doc: 'PG Password.',
       format: String,
-      default: '',
-      env: 'MYSQL_PASSWORD'
+      default: 'admin',
+      env: 'PG_PASSWORD'
     },
     user: {
-      doc: 'MYSQL user.',
+      doc: 'PG user.',
       format: String,
-      default: 'root',
-      env: 'MYSQL_USER'
+      default: 'postgres',
+      env: 'PG_USER'
     }
   }
 };
